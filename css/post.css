@@ -1,0 +1,102 @@
+#content .posts {
+    margin: 0 0 35px 25%;
+}
+
+.post {
+    width: 80%;
+    padding: 5px 20px 10px 15px;
+    background-color: #262626;
+    height: auto;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.post h2 {
+    margin-left: 25px;
+    margin-top: 6px;
+
+    font-size: 35px;
+    color: #6ba6e3;
+}
+
+.post img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.post-title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.post-title h2{
+    float: left;
+}
+
+
+.author {
+    text-align: right;
+}
+
+.post-title .author span{
+    font-size: 21px;
+    line-height: 2.5;
+    color: #ffdb78;
+}
+
+.post-title img {
+    float: right;
+    margin-left: 20px;
+    margin-top: 7px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.post .round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 1px solid #000000; /* Параметры рамки */
+}
+
+.post span {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: right;
+    color: #e3e3e3;
+}
+
+.hashtag {
+    margin-top: 10px;
+    float: left;
+}
+
+.hashtag a {
+    color: #6ba6e3;
+    text-decoration: none;
+}
+
+.hashtag a:hover {
+    text-decoration: underline;
+}
+
+
+.post .btn {
+    text-align: right;
+}
+
+.post button {
+    background-color: #6ba6e3;
+    font-size: 21px;
+    color: #ffffff;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    min-width: 150px;
+    max-width: 300px;
+    opacity: 0.9;
+}

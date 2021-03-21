@@ -1,0 +1,64 @@
+#content .profile {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 10px 35px 25%;
+    padding-bottom: 100px;
+}
+
+.profile h1 {
+    color: #ffdb78;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000;
+}
+
+.profile h2 {
+    float: left;
+    color: #ffdb78;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000;
+}
+
+.profile span {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 30px 30px;
+    color: #e2af41;
+    text-align: left;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000;
+}
+
+.profile img {
+    float: top;
+    margin-right: 50px;
+    min-height: 200px;
+    max-height: 400px;
+    width: 200px;
+    object-fit: cover;
+
+}
+
+.profile table {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.profile tr {
+    height: 50px;
+}
+
+.profile th {
+    color: #ffdb78;
+    margin-left: 50px;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #000000;
+    font-size: 30px;
+    width: 20%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.profile td {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px;
+    color: #e2af41;
+    text-align: left;
+    text-shadow: 1px 1px 3px #000000, 0 0 1em #000000;
+}
