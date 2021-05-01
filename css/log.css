@@ -12,6 +12,11 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 
+.form input{
+    border: 2px solid #262626;
+}
+
+
 .form button {
     background-color: #6ba6e3;
     font-size: 21px;
@@ -42,6 +47,20 @@ form {
     color: #e3e3e3;
 }
 
+
 .form h1, a {
     color: #6ba6e3;
+}
+
+label.error {
+    color: #b12121;
+    position: absolute;
+    background-color: #ffeb66;
+    padding: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+input.error {
+    border: 2px solid red;
 }

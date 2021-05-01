@@ -7,6 +7,11 @@ body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
+}
+
+html {
+    position: relative;
 }
 
 h1 {
@@ -53,7 +58,7 @@ h2 {
 
 #content {
     background-color: rgba(0, 0, 0, 0.4);
-    min-height: calc(100vh - 0px);
+    min-height: 100vh;
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -85,6 +90,15 @@ h2 {
 #footer a {
     color: #d6d6d6;
     text-align: right;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 

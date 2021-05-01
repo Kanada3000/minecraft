@@ -51,7 +51,7 @@
     float: left;
 }
 
-.follower .btn-unsub, .btn-sub {
+.follower .btn-sub {
     text-align: right;
 }
 
@@ -73,6 +73,6 @@
     background-color: #6ba6e3;
 }
 
-.btn-unsub button {
+button.unsub {
     background-color: #a1a1a1;
 }

@@ -5,6 +5,10 @@
     <title>Demon's Sanctuary</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="shortcut icon" href="ico.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 <div id="header"><span>DEMON'S SANCTUARY</span></div>
@@ -19,11 +23,35 @@
     </nav>
 </div>
 <div id="content">
-    <img src="images/yoda.jpeg" alt="List picture" width="600" height="450">
+    <div class="slideshow">
+        <div class="switch-l unselectable">
+            <span><</span>
+        </div>
+        <div class="images unselectable">
+            <div class="image active">
+                <img src="images/yoda.jpeg" alt="List picture">
+            </div>
+            <div class="image">
+                <img src="gallery_img/sld1.jpg" alt="List picture">
+            </div>
+            <div class="image">
+                <img src="gallery_img/sld2.png" alt="List picture">
+            </div>
+            <div class="image">
+                <img src="gallery_img/sld3.png" alt="List picture">
+            </div>
+        </div>
+        <div class="switch-r unselectable">
+            <span>></span>
+        </div>
+    </div>
+
+
 </div>
 <div id="footer">
     <span class="leftstr">&copy; Demon`s Sanctuary 2021</span>
     <a href="https://www.minecraft.net/ru-ru/" class="rightstr">Official Minecraft</a>
 </div>
+<script src="code/slideshow.js"></script>
 </body>
 </html>

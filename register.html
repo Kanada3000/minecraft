@@ -6,9 +6,14 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/log.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="shortcut icon" href="ico.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
 </head>
 <body style="background-image: url(images/bg_log.png);">
-<div id="header"><span>DEMON'S SANCTUARY</span></div>
+<div id="header">
+    <span>DEMON'S SANCTUARY</span></div>
 <div class="nav">
     <nav>
         <ul>
@@ -21,17 +26,20 @@
 </div>
 <div id="content">
     <div class="form">
-        <form>
+        <form id="register" action="index_reg.html">
             <h1>Register</h1>
             <hr>
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter email" id="email" required>
+            <input type="text" placeholder="Enter email" id="email" name="email">
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your name" id="name" name="name">
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter password" id="psw" required>
+            <input type="password" placeholder="Enter password" id="psw" name="pswd">
 
             <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat password" id="psw-repeat" required>
+            <input type="password" placeholder="Repeat password" id="psw-repeat" name="pswd2">
             <hr>
 
             <button type="submit" class="registerbtn">Register</button>
@@ -46,5 +54,7 @@
     <span class="leftstr">&copy; Demon`s Sanctuary 2021</span>
     <a href="https://www.minecraft.net/ru-ru/" class="rightstr">Official Minecraft</a>
 </footer>
+
+<script src="code/code.js"></script>
 </body>
 </html>
