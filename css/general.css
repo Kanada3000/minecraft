@@ -101,6 +101,22 @@ h2 {
                                   not supported by any browser */
 }
 
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+#sidebar form button{
+    background-color: #ffdb78;
+    font-size: 21px;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+}
+
 
 
 

@@ -33,14 +33,28 @@ $(function () {
         e.stopImmediatePropagation();
         return false;
     })
+
+
+    $("#sidebar a").click(function(e){
+        let link = $(this).attr("href").substr(1);
+        $("#content .gallery__item div.tag").each(function(){
+            if (link === "all") $(this).parent().show()
+            else if ($(this).html() === link) {
+                $(this).parent().show()
+            } else $(this).parent().hide()
+        })
+    })
+
 })
 
 
 function link(){
+    let scroll = $(document).scrollTop()
     $(".fulltext span.full").toggle()
     $(".fulltext span.minText").toggle()
     let text = $(".fulltext a").text()
     text === "Read more" ? text = "Hide" : text = "Read more";
     $(".fulltext a").text(text)
+    $(document).scrollTop(scroll)
 }
 

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/post.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body style="background-image: url(images/bg_discussion.png);">
 <div id="header"><span>DEMON'S SANCTUARY</span></div>
@@ -38,11 +40,94 @@
         К примеру, рацион леопарда составляют олени, косули, а порой обезьяны и грызуны. Так же питаются и
         львы-одиночки: их пища по размерам значительно меньше, но ее проще поймать.</p>
     <div class="comments">
-        <label for="comment">Комментарий</label><br/>
-        <textarea id="comment" required="required" cols="45" rows="8" maxlength="65525"></textarea>
-        <h2>Комментарии</h2>
-        <div class="comment">
+        <form>
+            <label for="comment">Комментарий</label><br/>
+            <textarea id="comment" maxlength="500" name="comment"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
 
+        <h2>Все комментарии</h2>
+        <div class="comment personal">
+            <img src="images/avatar3.jpg" alt="">
+            <br/>
+            <h3>Jeddy2018</h3>
+            <br/>
+            <span></span>
+            <div class="datetime">
+                <span class="date"></span>
+                <br/>
+                <span class="time"></span>
+            </div>
+        </div>
+        <br/>
+        <div class="comment">
+            <img src="images/avatar7.jpg" alt="">
+            <br/>
+            <h3>jane_1_5k</h3>
+            <br/>
+            <span>Хмммм.... Довольно странно видеть тут эту статью</span>
+            <div class="datetime">
+                <span class="date">17.09.2020</span>
+                <br/>
+                <span class="time">17:47:13</span>
+            </div>
+        </div>
+        <br>
+        <div class="reply">&rdca;</div>
+        <div class="comment">
+            <img src="images/avatar5.jpg" alt="">
+            <br/>
+            <h3>ilLuSiOnXD</h3>
+            <br/>
+            <span><span class="appeal">jane_1_5k</span>, забей, это тест</span>
+            <div class="datetime">
+                <span class="date">17.09.2020</span>
+                <br/>
+                <span class="time">15:50:12</span>
+            </div>
+
+        </div>
+        <br>
+        <div class="comment">
+            <img src="images/avatar8.jpg" alt="">
+            <br/>
+            <h3>je11ybeans</h3>
+            <br/>
+            <span>Лев - просто большая кошечка :) Мур</span>
+            <div class="datetime">
+                <span class="date">15.09.2020</span>
+                <br/>
+                <span class="time">11:20:19</span>
+            </div>
+        </div>
+        <br>
+        <div class="reply">&rdca;</div>
+        <div class="comment">
+            <img src="images/avatar4.jpg" alt="">
+            <br/>
+            <h3>Kanada3000</h3>
+            <br/>
+            <span><span class="appeal">je11ybeans</span>, ага, которая сьест тебя -_-</span>
+            <div class="datetime">
+                <span class="date">15.09.2020</span>
+                <br/>
+                <span class="time">10:42:48</span>
+            </div>
+        </div>
+        <br>
+        <div class="reply" style="visibility: hidden">&rdca;</div>
+        <div class="reply">&rdca;</div>
+        <div class="comment">
+            <img src="images/avatar6.jpg" alt="">
+            <br/>
+            <h3>nasamomdeleneromchik</h3>
+            <br/>
+            <span><span class="appeal">Kanada3000</span>, внатуре</span>
+            <div class="datetime">
+                <span class="date">15.09.2020</span>
+                <br/>
+                <span class="time">10:43:25</span>
+            </div>
         </div>
     </div>
 </div>
@@ -50,5 +135,6 @@
     <span class="leftstr">&copy; Demon`s Sanctuary 2021</span>
     <a href="https://www.minecraft.net/ru-ru/" class="rightstr">Official Minecraft</a>
 </div>
+<script src="code/comment.js"></script>
 </body>
 </html>

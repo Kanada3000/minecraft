@@ -104,3 +104,7 @@ body.overflow-hidden {
     user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+.gallery__item div.tag{
+    display: none
+}
