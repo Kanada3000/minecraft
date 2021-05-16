@@ -1,0 +1,116 @@
+#content.full {
+    background-color: #262626;
+    margin: 20px 10% 60px 10%;
+    padding: 60px;
+    font-size: 21px;
+    text-align: left;
+}
+
+.full img{
+    height: 50vh;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.full h2{
+    color: white;
+    font-size: 45px;
+}
+
+.full p {
+    letter-spacing: 1px;
+    line-height: 150%;
+    color: white;
+    text-align: left;
+}
+
+.full label {
+    color: white;
+}
+
+.full textarea{
+    resize: none;
+    width: 82%;
+    overflow:hidden;
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.full input[type = file]{
+    color: white;
+    display: none;
+}
+
+#prev{
+    display: none;
+}
+
+.full input{
+    margin-bottom: 40px;
+    margin-top: 15px;
+    min-width: 83.5%;
+    min-height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.full button{
+    margin-top: 100px;
+    height: 50px;
+    width: 160px;
+    background-color: #3a5a7a;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.full button:hover{
+    background-color: #6293c4;
+}
+
+.full label.file {
+    background-color: #343434;
+    height: 25px;
+    width: 250px;
+    cursor: pointer;
+    padding: 20px 50px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#tag{
+    background-color: #343434;
+    height: 25px;
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+option{
+    color: white;
+}
+
+.full label.file:hover{
+    background-color: #646464;
+}
+
+.full button[form="addform"]{
+    background-color: #ffcb40;
+    margin-left: 60%;
+    color: black;
+}
+
+.full button[form="addform"]:hover{
+    background-color: #ffdb78;
+}
+

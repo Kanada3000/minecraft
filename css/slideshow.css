@@ -12,26 +12,19 @@
 }
 
 .slideshow {
-    padding: 0 20%;
+    padding: 0 15%;
     display: flex;
     justify-content: space-between;
 }
 
 .switch-l, .switch-r {
-    background-color: #0088ff;
-    width: 90px;
-    height: 90px;
+    background-color: #020f1a;
+    width: 120px;
+    height: 120px;
     display: flex;
-    border-radius: 50px;
+    border-radius: 60px;
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
-}
-
-.switch-l span, .switch-r span{
-    align-self: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
 }

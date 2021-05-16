@@ -7,7 +7,6 @@ $(function(){
             },
             name:{
                 required: true,
-                minlength: 4,
                 maxlength: 20
             },
             pswd:{
@@ -21,12 +20,11 @@ $(function(){
         },
         messages:{
             email:{
-                required: "Это поле обязательно для заполнения!",
+                required: "Это  поле обязательно для заполнения!",
                 email: "Укажите корректный email-адрес"
             },
             name:{
                 required: "Это поле обязательно для заполнения!",
-                minlength: "минимальное кол-во символов - 4",
                 maxlength: "максимальное кол-во символов - 20"
             },
             pswd:{

@@ -108,3 +108,7 @@ body.overflow-hidden {
 .gallery__item div.tag{
     display: none
 }
+
+.gallery__item.local{
+    display: none;
+}

@@ -13,20 +13,22 @@ $(function () {
                 minText = text.substr(0, maxLen) + "...";
             }
             let mySpan = document.createElement("span")
-            let myA = document.createElement("a")
             mySpan.className = "minText";
             $(this).find(".fulltext").append(mySpan)
-            $(this).find(".fulltext").append(myA)
             $("span.minText").text(minText)
-            $(this).find(".fulltext a").attr("onclick", "javascript:link();")
-                .text("Read more")
+
+            if (textLen > maxLen) {
+                let myA = document.createElement("a")
+                $(this).find(".fulltext").append(myA)
+                $(this).find(".fulltext a").attr("onclick", "javascript:link();")
+                    .text("Read more")
+            }
         } else if (($(this).hasClass("fullscreen"))) {
             $(this).scrollTop(0)
                 .addClass("gallery__item")
                 .removeClass("fullscreen")
             $(this).find("a").remove()
             $(this).find("span.minText").remove()
-                // .remove(".fulltext span.minText")
             $("body").removeClass("overflow-hidden")
 
         }
@@ -38,12 +40,38 @@ $(function () {
     $("#sidebar a").click(function(e){
         let link = $(this).attr("href").substr(1);
         $("#content .gallery__item div.tag").each(function(){
-            if (link === "all") $(this).parent().show()
+            if (link === "all") {
+                if($(this).html() !== "hide")
+                $(this).parent().show()
+            }
             else if ($(this).html() === link) {
                 $(this).parent().show()
             } else $(this).parent().hide()
         })
     })
+
+    let searchParams = new URLSearchParams(window.location.search)
+    let post = $("div.gallery__item.local")
+    if(searchParams.has('title')){
+        let title = searchParams.get('title')
+        let tag = searchParams.get('tag')
+        let src = "gallery_img/" + searchParams.get('img')
+        post.find("img").attr("src",src)
+        post.find(".text span").text(title)
+        post.find("div.tag").text(tag)
+        post.show()
+    }
+
+    if(searchParams.has('text')){
+        let text = searchParams.get('text')
+        if(text !== ""){
+            post.find(".fulltext span").text(text)
+        } else {
+            post.find("div.fulltext").remove()
+            post.find("div.tag").hide()
+        }
+
+    }
 
 })
 
@@ -57,4 +85,8 @@ function link(){
     $(".fulltext a").text(text)
     $(document).scrollTop(scroll)
 }
+
+
+
+
 

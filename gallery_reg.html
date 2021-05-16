@@ -14,10 +14,12 @@
 <div class="nav">
     <nav>
         <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="gallery.html" class="disabled">Gallery</a></li>
-            <li><a href="discussions.html">Discussions</a></li>
-            <li><a href="login.html">Log in</a></li>
+            <li><a href="index_reg.html">Main Page</a></li>
+            <li><a href="gallery_reg.html" class="disabled">Gallery</a></li>
+            <li><a href="discussions_reg.html">Discussions</a></li>
+            <li><a href="profile_reg.html">Profile</a></li>
+            <li><a href="index.html">Exit</a></li>
+            <li style="padding-top: 10px; font-size: 22px;"><span style="color: #ffdb78; font-weight: 300;">Здравствуй, </span>Джедай</li>
         </ul>
     </nav>
 </div>
@@ -29,13 +31,29 @@
     <p><a href="#redstone">Redstone stuff</a></p>
     <p><a href="#other">Other</a></p>
 
-    <form action="login.html">
+    <form action="add-photo.html">
         <button>Добавить фото</button>
     </form>
 </div>
 <div id="content">
     <div class="gallery">
         <div class="column">
+
+            <div class="gallery__item local">
+                <img src="gallery_img/16.jpg" alt="Image 1">
+                <div class="text">
+                    <span>TESTESTEST</span>
+                </div>
+                <div class="fulltext">
+                    <span class="full">Minecraft (от англ. mine «шахта; добывать» + craft «ремесло») — компьютерная инди-игра в жанре песочницы, изначально созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB. Перссон опубликовал начальную версию игры в 2009 году; в конце 2011 года была выпущена стабильная версия для ПК Microsoft Windows, распространявшаяся через официальный сайт. В последующие годы Minecraft была портирована на Linux и macOS для персональных компьютеров; на Android, iOS и Windows Phone для мобильных устройств; на игровые приставки PlayStation 4, Vita, VR, Xbox One, Nintendo 3DS, Switch и Wii U. В 2014 году корпорация Microsoft приобрела права на Minecraft вместе с компанией Mojang AB за 2,5 миллиарда $. Студия 4J?! портировала игру на игровые приставки, а Xbox Game Studios разработала мультиплатформенную версию Minecraft и специальное издание игры для образовательных учреждений[⇨].
+
+Перссон написал Minecraft на Java с использованием библиотеки графического вывода LWJGL, черпая идеи из таких игр, как Dwarf Fortress, Dungeon Keeper и Infiniminer (англ.)русск.[⇨]. Minecraft даёт в распоряжение игрока процедурно генерируемый и изменяемый трёхмерный мир, полностью состоящий из кубов — его можно свободно перестраивать, создавая из этих кубов сложные сооружения — эта особенность делает игру схожей с различными конструкторами, такими как LEGO. Minecraft не ставит перед игроком каких-либо конкретных целей, но предлагает ему свободу действий: например, игрок может исследовать мир, добывать полезные ископаемые, сражаться с противниками и многое другое[⇨]. Игра включает в себя дополнительные режимы, например, «выживание», где игроку нужно самому добывать ресурсы, и «творчество», где у игрока эти ресурсы есть в неограниченном количестве[⇨]. Механика «редстоуна» (англ. Redstone) позволяет создавать в игре сложные логические схемы — тем самым игра может служить виртуальным конструктором для программистов и инженеров[⇨].</span>
+                </div>
+                <div class="tag">hide</div>
+            </div>
+
+
+
             <div class="gallery__item">
                 <img src="gallery_img/17.jpg" alt="Image 1">
                 <div class="text">
@@ -97,26 +115,6 @@
                 <div class="tag">other</div>
             </div>
         </div>
-
-
-        <!--        <a rel="gallery" href="#win1" title="Картинка 1">-->
-        <!--            <img src="gallery_img/09.jpg" alt=""/>-->
-        <!--        </a>-->
-        <!--        <a rel="gallery" href="gallery_img/11.jpg" title="Картинка 2">-->
-        <!--            <img src="gallery_img/11.jpg" alt=""/>-->
-        <!--        </a>-->
-        <!--        <a rel="gallery" href="gallery_img/12.jpg" title="Картинка 3">-->
-        <!--            <img src="gallery_img/12.jpg" alt=""/>-->
-        <!--        </a>-->
-        <!--        <a rel="gallery" href="gallery_img/13.jpg" title="Картинка 4">-->
-        <!--            <img src="gallery_img/13.jpg" alt=""/>-->
-        <!--        </a>-->
-        <!--        <a rel="gallery" href="gallery_img/14.jpg" title="Картинка 5">-->
-        <!--            <img src="gallery_img/14.jpg" alt=""/>-->
-        <!--        </a>-->
-        <!--        <a rel="gallery" href="gallery_img/15.jpg" title="Картинка 6">-->
-        <!--            <img src="gallery_img/15.jpg" alt=""/>-->
-        <!--        </a>-->
     </div>
 </div>
 <footer id="footer">
