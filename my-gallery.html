@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Demon's Sanctuary</title>
+    <title>DEMON'S SANCTUARY</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/gallery.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
-<body style="background-image: url(images/bg_gallery.png);">
+<body style="background-image: url(images/bg_profile.png);">
 <div id="header"><span>DEMON'S SANCTUARY</span></div>
 <div class="nav">
     <nav>
         <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="gallery.html" class="disabled">Gallery</a></li>
-            <li><a href="discussions.html">Discussions</a></li>
-            <li><a href="login.html">Log in</a></li>
+            <li><a href="index_reg.html">Main Page</a></li>
+            <li><a href="gallery_reg.html">Gallery</a></li>
+            <li><a href="discussions_reg.html">Discussions</a></li>
+            <li><a href="profile_reg.html" class="disabled">Profile</a></li>
+            <li><a href="index.html">Exit</a></li>
+            <li style="padding-top: 10px; font-size: 22px;"><span
+                    style="color: #ffdb78; font-weight: 300;">Здравствуй, </span>Джедай
+            </li>
         </ul>
     </nav>
 </div>
 <div id="sidebar">
-    <p><a href="#all">All</a></p>
-    <p><a href="#recipes">Craft recipes</a></p>
-    <p><a href="#wallpapers">Wallpapers</a></p>
-    <p><a href="#builds">Builds</a></p>
-    <p><a href="#redstone">Redstone stuff</a></p>
-    <p><a href="#other">Other</a></p>
-
-    <form action="login.html">
+    <a href="profile_reg.html">Основное</a><br/>
+    <a href="my-posts.html">Мои статьи</a><br/>
+    <a href="my-gallery.html">Мои фото</a><br/>
+    <a href="my-subscriptions.html">Подписки</a><br/>
+    <a href="my-followers.html">Подписчики</a>
+    <form action="add-photo.html">
         <button>Добавить фото</button>
     </form>
 </div>
-<div id="content">
+<div id="content" >
+    <h1 style="background: rgba(0, 0, 0, 0.8); margin: 0 0 35px 25%;">Мои фото</h1>
     <div class="gallery">
         <div class="column">
             <div class="gallery__item">
@@ -48,47 +51,8 @@
                 </div>
                 <div class="tag">wallpapers</div>
             </div>
-            <div class="gallery__item">
-                <img src="gallery_img/14.jpg" alt="Image 2">
-                <div class="text">
-                    <span>WOW</span>
-                </div>
-                <div class="tag">other</div>
-            </div>
         </div>
         <div class="column">
-            <div class="gallery__item">
-                <img src="gallery_img/18.jpg" alt="Image 5">
-                <div class="text">
-                    <span>ОГО А ЧТО У НАС ТУТ???</span>
-                </div>
-                <div class="fulltext">
-                    <span class="full">
-                        Когда мы клеили обои,<br/>
-                        Два раза чуть не развелись.<br/>
-                        Орал ты, на стремянке стоя,<br/>
-                        На голову мне сбросил кисть.<br/>
-                        У потолка пузырь надулся.<br/>
-<br/><br/>
-                        — Откуда руки у тебя?<br/>
-                        Куда их тянешь? Ты рехнулся?<br/>
-                        Приклей стык в стык! Вон там ровняй!<br/>
-                        — Не открывай окно! Ты дура?<br/>
-                        Там не намазала, смотри!<br/>
-                        Раз пролила, так убери!<br/>
-
-                        Да лишь на первый взгляд халтура!
-                    </span>
-                </div>
-                <div class="tag">wallpapers</div>
-            </div>
-            <div class="gallery__item ">
-                <img src="gallery_img/19.jpg" alt="Image 6">
-                <div class="text">
-                    <span>WOW</span>
-                </div>
-                <div class="tag">recipes</div>
-            </div>
             <div class="gallery__item">
                 <img src="gallery_img/12.jpg" alt="Image 3">
                 <div class="text">
@@ -99,11 +63,10 @@
         </div>
     </div>
 </div>
-<footer id="footer">
+<div id="footer">
     <span class="leftstr">&copy; Demon`s Sanctuary 2021</span>
     <a href="https://www.minecraft.net/ru-ru/" class="rightstr">Official Minecraft</a>
-</footer>
-
+</div>
 <script src="code/gallery.js"></script>
 </body>
 </html>

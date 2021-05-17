@@ -34,7 +34,7 @@
     margin-bottom: 40px;
 }
 
-.post-title h2{
+.post-title h2 {
     float: left;
 }
 
@@ -43,7 +43,7 @@
     text-align: right;
 }
 
-.post-title .author span{
+.post-title .author span {
     font-size: 21px;
     line-height: 2.5;
     color: #ffdb78;
@@ -110,7 +110,7 @@
     font-size: 21px;
 }
 
-.full img{
+.full img {
     height: 50vh;
     width: auto;
 }
@@ -127,15 +127,16 @@
 }
 
 .comments {
-    margin-top: 160px;
+    margin-top: 100px;
     text-align: left;
 }
-.comments h2{
+
+.comments h2 {
     margin-top: 50px;
     color: white
 }
 
-.comments textarea{
+.comments textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -146,8 +147,10 @@
 
 .comment {
     text-align: left;
+    height: 110px;
 }
-.comment img{
+
+.comment img {
     text-align: left;
     float: left;
     width: 100px;
@@ -157,7 +160,7 @@
     object-fit: cover;
 }
 
-.comment h3{
+.comment h3 {
     margin-top: 0;
     font-size: 20px;
     line-height: 1;
@@ -170,14 +173,15 @@
     text-align: left;
     color: #e3e3e3;
     float: left;
-    /*padding-right: 100px;*/
 }
+
 .comment span.appeal {
     color: #6ba6e3;
     font-weight: bold;
+    padding-right: 0;
 }
 
-div.reply{
+div.reply {
     float: left;
     height: 50px;
     font-size: 100px;
@@ -186,21 +190,101 @@ div.reply{
     text-align: center;
 }
 
-.datetime{
+.datetime {
     float: right;
     text-align: right;
-    margin-top:-80px;
+    margin-top: -80px;
 }
 
 
-.comment.personal{
+.comment.personal {
     display: none;
 }
 
-.comment span:not(.date):not(.time):not(.appeal) {
+.comment span:not(.date):not(.time):not(.appeal):not(.reply-link) {
     padding-right: 100px;
 }
 
-.post.local{
+.post.local {
     display: none;
+}
+
+.comment span.reply-link {
+    display: none;
+}
+
+.comment span.reply-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment:hover span.reply-link {
+    display: inline;
+}
+
+.comment .reply-link.answer {
+    display: inline;
+    background-color: #5051bc;
+    padding: 10px;
+}
+
+.comment input {
+    width: 400px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.likes {
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.like {
+    color: #7eff36;
+    cursor: pointer;
+}
+
+.dislike {
+    color: #ff3636;
+    cursor: pointer;
+}
+
+#notification {
+    border-radius: 20px;
+    background-color: #101010;
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    width: 500px;
+    height: 100px;
+    display: none;
+}
+
+#notification .image {
+    height: 100%;
+    margin-left: 20px;
+    width: auto;
+    float: left;
+}
+
+#notification .image:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#notification img {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#notification span {
+    padding-left: 170px;
+    padding-top: 40px;
+    display: block;
 }

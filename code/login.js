@@ -6,7 +6,6 @@ $(function() {
         $(this).find("input").each(function (){
             $data[this.name] = $(this).val();
         })
-        alert()
         let key_name = $data["email"] + "_name"
         let key_psw = $data["email"] + "_psw"
         localStorage.setItem(key_name, $data["name"])

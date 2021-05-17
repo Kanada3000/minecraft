@@ -39,28 +39,44 @@
     <p>Другие же кошачьи выбирают в качестве жертв более мелких млекопитающих, поэтому и объединяться им не надо.
         К примеру, рацион леопарда составляют олени, косули, а порой обезьяны и грызуны. Так же питаются и
         львы-одиночки: их пища по размерам значительно меньше, но ее проще поймать.</p>
+
+    <div class="likes">
+        <div class="like" onclick="like(this);">
+            &#128077;
+            <span>2</span>
+        </div>
+        <div class="dislike" onclick="dislike(this);">
+            &#128078;
+            <span>4</span>
+        </div>
+    </div>
     <div class="comments">
         <form>
             <label for="comment">Комментарий</label><br/>
             <textarea id="comment" maxlength="500" name="comment"></textarea>
             <button type="submit">Отправить</button>
         </form>
+        <form id="reply" action="javascript:reply();" name="formReply"></form>
 
         <h2>Все комментарии</h2>
+
         <div class="comment personal">
             <img src="images/avatar3.jpg" alt="">
             <br/>
             <h3>Jeddy2018</h3>
             <br/>
-            <span></span>
+            <span><input type="text" name="comment" form="reply"></span>
             <div class="datetime">
                 <span class="date"></span>
                 <br/>
                 <span class="time"></span>
+                <br/>
+                <br/>
+                <span class="reply-link answer" onclick="formReply.submit()">Отправить</span>
             </div>
         </div>
         <br/>
-        <div class="comment">
+        <div class="comment rep0">
             <img src="images/avatar7.jpg" alt="">
             <br/>
             <h3>jane_1_5k</h3>
@@ -70,11 +86,15 @@
                 <span class="date">17.09.2020</span>
                 <br/>
                 <span class="time">17:47:13</span>
+                <br/>
+                <br/>
+                <span class="reply-link" onclick = "onClick(this);">Ответить</span>
             </div>
+
         </div>
         <br>
         <div class="reply">&rdca;</div>
-        <div class="comment">
+        <div class="comment rep1">
             <img src="images/avatar5.jpg" alt="">
             <br/>
             <h3>ilLuSiOnXD</h3>
@@ -84,11 +104,14 @@
                 <span class="date">17.09.2020</span>
                 <br/>
                 <span class="time">15:50:12</span>
+                <br/>
+                <br/>
+                <span class="reply-link" onclick = "onClick(this);">Ответить</span>
             </div>
 
         </div>
         <br>
-        <div class="comment">
+        <div class="comment rep0">
             <img src="images/avatar8.jpg" alt="">
             <br/>
             <h3>je11ybeans</h3>
@@ -98,11 +121,14 @@
                 <span class="date">15.09.2020</span>
                 <br/>
                 <span class="time">11:20:19</span>
+                <br/>
+                <br/>
+                <span class="reply-link" onclick = "onClick(this);">Ответить</span>
             </div>
         </div>
         <br>
         <div class="reply">&rdca;</div>
-        <div class="comment">
+        <div class="comment rep1">
             <img src="images/avatar4.jpg" alt="">
             <br/>
             <h3>Kanada3000</h3>
@@ -112,12 +138,15 @@
                 <span class="date">15.09.2020</span>
                 <br/>
                 <span class="time">10:42:48</span>
+                <br/>
+                <br/>
+                <span class="reply-link" onclick = "onClick(this);">Ответить</span>
             </div>
         </div>
         <br>
         <div class="reply" style="visibility: hidden">&rdca;</div>
         <div class="reply">&rdca;</div>
-        <div class="comment">
+        <div class="comment rep2">
             <img src="images/avatar6.jpg" alt="">
             <br/>
             <h3>nasamomdeleneromchik</h3>
@@ -127,10 +156,22 @@
                 <span class="date">15.09.2020</span>
                 <br/>
                 <span class="time">10:43:25</span>
+                <br/>
+                <br/>
+                <span class="reply-link" onclick = "onClick(this);">Ответить</span>
             </div>
         </div>
     </div>
 </div>
+
+<div id="notification">
+    <div class="image">
+        <img src="gallery_img/16.jpg">
+    </div>
+    <span>Кто-то прокомментировал Ваш пост</span>
+</div>
+
+
 <div id="footer">
     <span class="leftstr">&copy; Demon`s Sanctuary 2021</span>
     <a href="https://www.minecraft.net/ru-ru/" class="rightstr">Official Minecraft</a>
